@@ -2,7 +2,11 @@
 SAVE_DIR=SPECS
 
 spec::
-	pyp2rpm -n boto --srpm -d ${SAVE_DIR}
+	pyp2rpm -n boto        --srpm -d ${SAVE_DIR}
+	pyp2rpm -n mrjob       --srpm -d ${SAVE_DIR}
+	pyp2rpm -n simplejson  --srpm -d ${SAVE_DIR}
+	pyp2rpm -n filechunkio --srpm -d ${SAVE_DIR}
+	pyp2rpm -n PyYAML      --srpm -d ${SAVE_DIR}
 
 fetch:
 	rm -f ./SOURCES/*.gz
