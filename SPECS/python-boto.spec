@@ -10,7 +10,6 @@ License:        MIT
 URL:            https://github.com/boto/boto/
 Source0:        https://pypi.python.org/packages/source/b/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
- 
 BuildRequires:  python2-devel
 BuildRequires:  python-sphinx
 
@@ -23,14 +22,11 @@ boto 2.38.0
 
 Released: 9-Apr-2015
 
-.. image:: https://travis-
-ci.org/boto/boto.svg?branch=develop
-        :target: https://travis-
-ci.org/boto/boto
+.. image:: https://travis-ci.org/boto/boto.svg?branch=develop
+        :target: https://travis-ci.org/boto/boto
 
 .. image:: https://pypip.in/d/boto/badge.svg
-        :target:
-https://pypi.python.org/pypi/boto/
+        :target: https://pypi.python.org/pypi/boto/
 
 ************
 Introduction
@@ -38,13 +34,12 @@ Introduction
 Boto is a Python package that provides interfaces to Amazon Web Services.
 Currently, all ...
 
-
 %prep
 %setup -q -n %{pypi_name}-%{version}
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
-# generate html docs 
+# generate html docs
 sphinx-build docs/source html
 # remove the sphinx-build leftovers
 rm -rf html/.{doctrees,buildinfo}
@@ -53,10 +48,8 @@ rm -rf html/.{doctrees,buildinfo}
 %build
 %{__python2} setup.py build
 
-
 %install
 %{__python2} setup.py install --skip-build --root %{buildroot}
-
 
 
 %files
