@@ -51,6 +51,8 @@ rm -rf %{pypi_name}.egg-info
 
 %files
 %doc examples/mr_postfix_bounce/README.rst examples/mr_travelling_salesman/README.rst README.rst LICENSE.txt
+%{_bindir}/mrjob
+%{python2_sitelib}/%{pypi_name}
 %{python2_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
 
 %changelog
