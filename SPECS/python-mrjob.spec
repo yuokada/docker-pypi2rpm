@@ -10,8 +10,9 @@ License:        ASL %(TODO: version)s
 URL:            http://github.com/Yelp/mrjob
 Source0:        https://pypi.python.org/packages/source/m/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
- 
+
 BuildRequires:  python2-devel
+AutoReq:        no
 
 
 %description

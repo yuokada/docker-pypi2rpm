@@ -9,8 +9,9 @@ Summary:        YAML parser and emitter for Python
 License:        MIT
 URL:            http://pyyaml.org/wiki/PyYAML
 Source0:        https://pypi.python.org/packages/source/P/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
- 
+
 BuildRequires:  python2-devel
+AutoReq: no
 
 
 %description
@@ -44,7 +45,8 @@ CFLAGS="$RPM_OPT_FLAGS" %{__python2} setup.py build
 
 %files
 %doc LICENSE
-%{python2_sitearch}/%{pypi_name}
+# %{python2_sitearch}/%{pypi_name}
+%{python2_sitearch}/yaml
 %{python2_sitearch}/%{pypi_name}-%{version}-py?.?.egg-info
 
 %changelog

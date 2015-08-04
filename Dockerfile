@@ -1,6 +1,6 @@
 #FROM yjlinux:6.5.7-slim
 FROM centos:latest
-RUN yum update -y && yum install -y rpmdevtools python2-devel python-sphinx
+RUN yum update -y && yum install -y rpmdevtools python2-devel python-sphinx libyaml-devel
 
 ## FPM
 RUN yum install -y ruby-devel ruby rubygems gcc make python-setuptools

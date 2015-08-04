@@ -6,12 +6,13 @@ Version:        1.6
 Release:        1%{?dist}
 Summary:        FileChunkIO represents a chunk of an OS-level file containing bytes data
 
-License:        
+License:
 URL:            http://bitbucket.org/fabian/filechunkio
 Source0:        https://pypi.python.org/packages/source/f/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
- 
+
 BuildRequires:  python2-devel
+AutoReq:        no
 
 
 %description
@@ -46,7 +47,7 @@ EXAMPLE:
 
 
 %files
-%doc 
+%doc
 %{python2_sitelib}/%{pypi_name}
 %{python2_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
 

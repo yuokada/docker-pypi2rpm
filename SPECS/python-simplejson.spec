@@ -9,8 +9,9 @@ Summary:        Simple, fast, extensible JSON encoder/decoder for Python
 License:        AFL and MIT
 URL:            http://github.com/simplejson/simplejson
 Source0:        https://pypi.python.org/packages/source/s/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
- 
+
 BuildRequires:  python2-devel
+AutoReq:        no
 
 
 %description
