@@ -1,6 +1,7 @@
 # Created by pyp2rpm-1.1.2
 %global pypi_name simplejson
 
+Summary: Simple, fast, extensible JSON encoder/decoder for Python
 Name:           python-%{pypi_name}
 Version:        3.8.0
 Release:        1%{?dist}
@@ -11,7 +12,9 @@ URL:            http://github.com/simplejson/simplejson
 Source0:        https://pypi.python.org/packages/source/s/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 
 BuildRequires:  python2-devel
+Prefix: %{_prefix}
 AutoReq:        no
+Vendor: Bob Ippolito <bob@redivi.com>
 
 
 %description

@@ -1,6 +1,7 @@
 # Created by pyp2rpm-1.1.2
 %global pypi_name boto
 
+Summary: Amazon Web Services Library
 Name:           python-%{pypi_name}
 Version:        2.38.0
 Release:        1%{?dist}
@@ -9,10 +10,12 @@ Summary:        Amazon Web Services Library
 License:        MIT
 URL:            https://github.com/boto/boto/
 Source0:        https://pypi.python.org/packages/source/b/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
-BuildArch:      noarch
+#BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python-sphinx
-AutoReq:        no
+
+Prefix: %{_prefix}
+AutoReq: no
 
 
 %description
@@ -41,7 +44,7 @@ Currently, all ...
 rm -rf %{pypi_name}.egg-info
 
 # generate html docs
-sphinx-build docs/source html
+#sphinx-build docs/source html
 # remove the sphinx-build leftovers
 rm -rf html/.{doctrees,buildinfo}
 
@@ -54,7 +57,7 @@ rm -rf html/.{doctrees,buildinfo}
 
 
 %files
-%doc html README.rst
+#%doc html README.rst
 %{_bindir}/sdbadmin
 %{_bindir}/elbadmin
 %{_bindir}/cfadmin

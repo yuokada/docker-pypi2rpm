@@ -1,6 +1,7 @@
 # Created by pyp2rpm-1.1.2
 %global pypi_name mrjob
 
+Summary: Python MapReduce framework
 Name:           python-%{pypi_name}
 Version:        0.4.5
 Release:        1%{?dist}
@@ -12,7 +13,9 @@ Source0:        https://pypi.python.org/packages/source/m/%{pypi_name}/%{pypi_na
 BuildArch:      noarch
 
 BuildRequires:  python2-devel
+Prefix: %{_prefix}
 AutoReq:        no
+Vendor: David Marin <dm@davidmarin.org>
 
 
 %description

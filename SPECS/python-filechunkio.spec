@@ -1,6 +1,7 @@
 # Created by pyp2rpm-1.1.2
 %global pypi_name filechunkio
 
+Summary: FileChunkIO represents a chunk of an OS-level file containing bytes data
 Name:           python-%{pypi_name}
 Version:        1.6
 Release:        1%{?dist}
@@ -12,7 +13,10 @@ Source0:        https://pypi.python.org/packages/source/f/%{pypi_name}/%{pypi_na
 BuildArch:      noarch
 
 BuildRequires:  python2-devel
+
+Prefix: %{_prefix}
 AutoReq:        no
+Vendor: Fabian Topfstedt <topfstedt@schneevonmorgen.com>
 
 
 %description
