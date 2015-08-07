@@ -15,5 +15,6 @@ COPY ./                 /rpmbuild/
 COPY ./.rpmmacros       /root/
 
 RUN chown root:root -R /rpmbuild
+CMD /bin/bash
 # RUN rpmbuild -bb /rpmbuild/SPECS/simplejson.spec
 # CMD rpmbuild -ba /rpmbuild/SPECS/simplejson.spec
