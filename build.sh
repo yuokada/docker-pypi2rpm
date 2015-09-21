@@ -3,5 +3,5 @@
 for f in `find SPECS -name "*.spec"`;
 do
     echo $f
-    rpmbuild -bb $f
+    rpmbuild -ba $f
 done
