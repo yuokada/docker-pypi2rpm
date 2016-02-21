@@ -1,4 +1,4 @@
-#%_topdir      %(echo $HOME)/rpmbuild
-%_topdir      /rpmbuild
+%_topdir      %(echo $HOME)/rpmbuild
+#%_topdir      /rpmbuild
 %debug_package %{nil}
 %_smp_mflags  -j2
